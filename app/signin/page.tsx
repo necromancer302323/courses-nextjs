@@ -2,8 +2,9 @@ import { Auth } from "@/components/auth";
 import { Quote } from "@/components/Quote";
 
 
-export default function Home() {
-  return <div className="grid grid-cols-2">
+export default function Signin(){
+    
+    return <div className="grid grid-cols-2">
         <div>
             <Auth type="signin"/>
         </div>
@@ -13,5 +14,3 @@ export default function Home() {
       
     </div>
 }
-
-
