@@ -29,7 +29,7 @@ export function Avatar({ name,size }: { name: string,size:number }){
   const route=useRouter()
   return (
     <button onClick={()=>{ localStorage.removeItem("userId");alert("succefully logged out");route.push("/signin")}}>
-<div className={`relative inline-flex items-center justify-center w-fit h-${size} overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600 p-2`} >
+<div className={`relative inline-flex items-center justify-center w-fit h-${size} overflow-hidden  rounded-full bg-gray-700 p-2`} >
     <span className="font-medium text-gray-600 dark:text-gray-300">{name}</span>
 </div>
 </button>

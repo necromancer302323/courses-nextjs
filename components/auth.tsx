@@ -70,7 +70,7 @@ export const Auth = ({ type }: { type: "signup" | "signin" }) => {
             }            if(!localStorage.getItem("userId")){
 
             }else{
-              {type=="signin"? route.push("/courses"):route.push("/signup")}
+              {type=="signin"? route.push("/courses/1"):route.push("/signup")}
             }
             }}
             type="button"

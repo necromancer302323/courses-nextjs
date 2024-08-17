@@ -4,10 +4,10 @@ import client from "@/db"
 
 export async function signup(username:string,password:string){
     const body={username,password}
-    console.log(body)
+  
     const { success } = signupInput.safeParse(body);
     if (!success) {
-        console.log(success)
+    
         return { message: "invalid input" }
     }
    
@@ -52,7 +52,7 @@ export async function signin(username:string,password:string){
         password: body.password,
       }
     });
-    console.log(body.username)
+   
     if (!user) {
       return { error: "user not found" };
     }
